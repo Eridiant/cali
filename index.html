@@ -234,9 +234,31 @@
     <div class="container" style="max-width: 1600px; margin-left: auto; margin-right: auto">
         <div class="project-wrapper">
             <div class="project-img">
-                <picture>
-                    <img src="http://dummyimage.com/486x691/a6a6ff">
+                <div class="project-img-hide project-show" id="project-1">
+                    <picture>
+                        <img src="http://dummyimage.com/486x691/a6a6ff.jpg&text=1">
+                    </picture>
+                </div>
+                <div class="project-img-hide" id="project-2">
+                    <picture>
+                    <img src="http://dummyimage.com/486x691/a6a6ff.jpg&text=2">
                 </picture>
+                </div>
+                <div class="project-img-hide" id="project-3">
+                    <picture>
+                    <img src="http://dummyimage.com/486x691/a6a6ff.jpg&text=3">
+                </picture>
+                </div>
+                <div class="project-img-hide" id="project-4">
+                    <picture>
+                    <img src="http://dummyimage.com/486x691/a6a6ff.jpg&text=4">
+                </picture>
+                </div>
+                <div class="project-img-hide" id="project-5">
+                    <picture>
+                    <img src="http://dummyimage.com/486x691/a6a6ff.jpg&text=5">
+                </picture>
+                </div>
             </div>
             <div class="project-about">
                 <p class="subtitle">Раздел о компании</p>
@@ -245,7 +267,11 @@
                     Разнообразный и богатый опыт начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития.
                 </p>
                 <div class="project-svg">
-                    <img src="http://dummyimage.com/1060x500/a6a6ff">
+                    <figure class="project-fig">
+                        <object id="project" data="images/svg/project.svg" type="image/svg+xml">
+                            <!-- <img src="images/dist/bg-1920x1450.jpg" alt=""> -->
+                        </object>
+                    </figure>
                 </div>
             </div>
         </div>
@@ -257,20 +283,27 @@
         <div class="choose-bg">
             <div class="choose-bg-img">
                 <picture>
-                    <img src="/images/dist/index/choose-bg.jpg" alt="">
+                    <img src="images/dist/index/choose-bg.jpg" alt="">
                 </picture>
+            </div>
+            <div class="choose-bg-svg">
+                <figure class="choose-bg-fig">
+                    <object id="choosed" data="images/svg/choose-bg.svg" type="image/svg+xml">
+                        <!-- <img src="images/dist/bg-1920x1450.jpg" alt=""> -->
+                    </object>
+                </figure>
             </div>
             <div class="choose-content">
                 <p class="subtitle">Планировки</p>
                 <h2>Выберите блок</h2>
                 <div class="choose-buttons">
-                    <a href="#" class="choose-button">
+                    <a href="#" class="choose-button" data-choose="1">
                         Блок <span>а</span>
                     </a>
-                    <a href="#" class="choose-button">
+                    <a href="#" class="choose-button" data-choose="2">
                         Блок <span>б</span>
                     </a>
-                    <a href="#" class="choose-button">
+                    <a href="#" class="choose-button" data-choose="3">
                         Блок <span>с</span>
                     </a>
                 </div>
@@ -358,7 +391,7 @@
     <div class="content-wrapper">
         <div class="content-nav">
             <ul>
-                <li><a href="#">Инфраструктура</a></li>
+                <li><a href="infrastructure.html">Инфраструктура</a></li>
                 <li><a href="layouts.html">Планировки</a></li>
                 <li><a href="gallery.html">Галерея</a></li>
                 <li><a href="about.html">О компании</a></li>
@@ -418,4 +451,34 @@
 <script src="js/app.min.js"></script>
 </body>
 </html>
+
+
+
+<div class="popup-wrapper">
+    <div class="popup">
+        <div class="popup-check">
+            <svg width="21" height="17"><use xlink:href="images/icons.svg#check"></use></svg>
+        </div>
+        <div class="popup-desc">
+            <h2>Спасибо</h2>
+            <p>
+                Ваша заявка отправлена, мы перезвоним
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="popup-wrapper">
+    <div class="popup">
+        <div class="popup-error">
+            <svg width="21" height="17"><use xlink:href="images/icons.svg#check"></use></svg>
+        </div>
+        <div class="popup-desc">
+            <h2>Ошибка</h2>
+            <p>
+                Ваша заявка не отправлена, попробуйте еще раз или отправьте заявку позднее.
+            </p>
+        </div>
+    </div>
+</div>
 
