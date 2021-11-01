@@ -27,7 +27,8 @@
    </g>
    <style>
       .blur {
-         fill: #0B286799
+         fill: #0B286799;
+         transition: .4s
       }
       .active {
          fill: #CDB13400
