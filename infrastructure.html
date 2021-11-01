@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 
@@ -19,13 +21,14 @@
 
 </head>
 
-<body>
+<body class='wh'>
+<!-- <body> -->
 <div class="top">
 	<div class="container" style="max-width: 1600px; margin-left: auto; margin-right: auto">
 		<div class="top-nav">
 			<div class="top-logo">
 				<a href="/">
-					<svg width="53" height="108"><use xlink:href="images/icons.svg#logo"></use></svg>
+					<svg width="100%" height="100%"><use xlink:href="images/icons.svg#logo"></use></svg>
 				</a>
 			</div>
 			<div class="top-social">
@@ -51,18 +54,47 @@
 				<a href="#" class="current">ru</a>
 				<a href="#">he</a>
 			</div>
+			<div class="top-navg">
+				<a href="infrastructure.html">Инфраструктура</a>
+                <a href="layouts.html">Планировки</a>
+                <a href="gallery.html">Галерея</a>
+                <a href="about.html">О компании</a>
+                <a href="news.html">Новости</a>
+                <a href="contacts.html">Контакты</a>
+			</div>
 			<a href="tel:+70988900043" class="top-phone phone">+7 (098) 890-00-43</a>
 		</div>
 	</div>
 </div>
 
-<div class="infrastructure">
+<div id="infrastructure" class="infrastructure">
+    <div class="container" style="max-width: 1306px; margin-left: auto; margin-right: auto">
+        <div class="infr-btn">
+            <div class="infr-btn-choosed btn btn-blue">
+                Бассейн
+            </div>
+            <div class="infr-btn-choose">
+                <p data-num="1">Бассейн</p>
+                <p data-num="2">SPA - центр</p>
+                <p data-num="3">Фитнес зал</p>
+                <p data-num="4">Lounge Bar</p>
+                <p data-num="5">Кинотеатр</p>
+                <p data-num="6">Собственный пляж</p>
+                <p data-num="7">Озелененная терраса</p>
+                <p data-num="8">Детская комната</p>
+                <p data-num="9">Coworking зона</p>
+                <p data-num="10">Конференц-зал</p>
+                <p data-num="11">Паркинг</p>
+                <p data-num="12">Казино</p>
+            </div>
+        </div>
+    </div>
     <div class="container-lg" style="max-width: 1920px; margin-left: auto; margin-right: auto">
         <div class="infrastructure-wrapper">
-            <div class="infrastructure-item">
+            <div class="infrastructure-item infrastructure-active" data-item="1">
                 <div class="infrastructure-item-img">
                     <picture>
-                        <img src="http://dummyimage.com/480x850/a6a6ff">
+                        <img src="images/dist/infrastructure/infrs-1.jpg" width="481" height="849" alt="">
                     </picture>
                 </div>
                 <div class="infrastructure-item-inf">
@@ -82,10 +114,10 @@
                     <svg width="31" height="31"><use xlink:href="images/icons.svg#btn"></use></svg>
                 </div>
             </div>
-            <div class="infrastructure-item">
+            <div class="infrastructure-item" data-item="2">
                 <div class="infrastructure-item-img">
                     <picture>
-                        <img src="http://dummyimage.com/580x850/ffe3a6">
+                        <img src="images/dist/infrastructure/infrs-2.jpg" width="481" height="849" alt="">
                     </picture>
                 </div>
                 <div class="infrastructure-item-inf">
@@ -98,17 +130,17 @@
                         </p>
                     </div>
                     <div class="infrastructure-item-title">
-                        Открытый и закрытый бассейн
+                        СПА центр
                     </div>
                 </div>
                 <div class="infrastructure-item-btn">
                     <svg width="31" height="31"><use xlink:href="images/icons.svg#btn"></use></svg>
                 </div>
             </div>
-            <div class="infrastructure-item">
+            <div class="infrastructure-item" data-item="3">
                 <div class="infrastructure-item-img">
                     <picture>
-                        <img src="http://dummyimage.com/480x1000/ffa6da">
+                        <img src="images/dist/infrastructure/infrs-3.jpg" width="481" height="849" alt="">
                     </picture>
                 </div>
                 <div class="infrastructure-item-inf">
@@ -121,17 +153,17 @@
                         </p>
                     </div>
                     <div class="infrastructure-item-title">
-                        Открытый и закрытый бассейн
+                        Фитнес зал
                     </div>
                 </div>
                 <div class="infrastructure-item-btn">
                     <svg width="31" height="31"><use xlink:href="images/icons.svg#btn"></use></svg>
                 </div>
             </div>
-            <div class="infrastructure-item">
+            <div class="infrastructure-item" data-item="4">
                 <div class="infrastructure-item-img">
                     <picture>
-                        <img src="http://dummyimage.com/400x650/a6fff3">
+                        <img src="images/dist/infrastructure/infrs-4.jpg" width="481" height="849" alt="">
                     </picture>
                 </div>
                 <div class="infrastructure-item-inf">
@@ -144,13 +176,198 @@
                         </p>
                     </div>
                     <div class="infrastructure-item-title">
-                        Открытый и закрытый бассейн
+                        Piano & Lounge Bar с живой музыкой
                     </div>
                 </div>
                 <div class="infrastructure-item-btn">
                     <svg width="31" height="31"><use xlink:href="images/icons.svg#btn"></use></svg>
                 </div>
             </div>
+            <div class="infrastructure-item" data-item="5">
+                <div class="infrastructure-item-img">
+                    <picture>
+                        <img src="images/dist/infrastructure/infrs-5.jpg" width="481" height="849" alt="">
+                    </picture>
+                </div>
+                <div class="infrastructure-item-inf">
+                    <div class="infrastructure-item-desc">
+                        <p class="infrastructure-item-subtitle">
+                            Отличное место для работы
+                        </p>
+                        <p class="infrastructure-item-text">
+                            Вся зона будет иметь роскошное светлое пространство, отдельные зоны массажа и оздоровительных процедур. В отличие от большинства спа,которые рассчитаны на туристов, наш спа центр будет иметь — ориентацию на клиентов отеля и владельцев апартаментов, мы сделали упор на  благородные материалы в отделке, лаконичность дизайна и бесконечная элегантность.
+                        </p>
+                    </div>
+                    <div class="infrastructure-item-title">
+                        Кинотеатр “Calligraphy Cinema”
+                    </div>
+                </div>
+                <div class="infrastructure-item-btn">
+                    <svg width="31" height="31"><use xlink:href="images/icons.svg#btn"></use></svg>
+                </div>
+            </div>
+            <div class="infrastructure-item" data-item="6">
+                <div class="infrastructure-item-img">
+                    <picture>
+                        <img src="images/dist/infrastructure/infrs-6.jpg" width="481" height="849" alt="">
+                    </picture>
+                </div>
+                <div class="infrastructure-item-inf">
+                    <div class="infrastructure-item-desc">
+                        <p class="infrastructure-item-subtitle">
+                            Отличное место для работы
+                        </p>
+                        <p class="infrastructure-item-text">
+                            Разнообразный и богатый опыт начало повседневной работы по формированию позиции позволяет.
+                        </p>
+                    </div>
+                    <div class="infrastructure-item-title">
+                        Собственный пляж, услуги гольф-машин
+                    </div>
+                </div>
+                <div class="infrastructure-item-btn">
+                    <svg width="31" height="31"><use xlink:href="images/icons.svg#btn"></use></svg>
+                </div>
+            </div>
+            <div class="infrastructure-item" data-item="7">
+                <div class="infrastructure-item-img">
+                    <picture>
+                        <img src="images/dist/infrastructure/infrs-7.jpg" width="481" height="849" alt="">
+                    </picture>
+                </div>
+                <div class="infrastructure-item-inf">
+                    <div class="infrastructure-item-desc">
+                        <p class="infrastructure-item-subtitle">
+                            Отличное место для работы
+                        </p>
+                        <p class="infrastructure-item-text">
+                            Разнообразный и богатый опыт начало повседневной работы по формированию позиции позволяет.
+                        </p>
+                    </div>
+                    <div class="infrastructure-item-title">
+                        Озелененная терраса в общего пользования
+                    </div>
+                </div>
+                <div class="infrastructure-item-btn">
+                    <svg width="31" height="31"><use xlink:href="images/icons.svg#btn"></use></svg>
+                </div>
+            </div>
+            <div class="infrastructure-item" data-item="8">
+                <div class="infrastructure-item-img">
+                    <picture>
+                        <img src="images/dist/infrastructure/infrs-8.jpg" width="481" height="849" alt="">
+                    </picture>
+                </div>
+                <div class="infrastructure-item-inf">
+                    <div class="infrastructure-item-desc">
+                        <p class="infrastructure-item-subtitle">
+                            Отличное место для работы
+                        </p>
+                        <p class="infrastructure-item-text">
+                            Разнообразный и богатый опыт начало повседневной работы по формированию позиции позволяет.
+                        </p>
+                    </div>
+                    <div class="infrastructure-item-title">
+                        Детская комната
+                    </div>
+                </div>
+                <div class="infrastructure-item-btn">
+                    <svg width="31" height="31"><use xlink:href="images/icons.svg#btn"></use></svg>
+                </div>
+            </div>
+            <div class="infrastructure-item" data-item="9">
+                <div class="infrastructure-item-img">
+                    <picture>
+                        <img src="images/dist/infrastructure/infrs-9.jpg" width="481" height="849" alt="">
+                    </picture>
+                </div>
+                <div class="infrastructure-item-inf">
+                    <div class="infrastructure-item-desc">
+                        <p class="infrastructure-item-subtitle">
+                            Отличное место для работы
+                        </p>
+                        <p class="infrastructure-item-text">
+                            Разнообразный и богатый опыт начало повседневной работы по формированию позиции позволяет.
+                        </p>
+                    </div>
+                    <div class="infrastructure-item-title">
+                        Coworking зона
+                    </div>
+                </div>
+                <div class="infrastructure-item-btn">
+                    <svg width="31" height="31"><use xlink:href="images/icons.svg#btn"></use></svg>
+                </div>
+            </div>
+            <div class="infrastructure-item" data-item="10">
+                <div class="infrastructure-item-img">
+                    <picture>
+                        <img src="images/dist/infrastructure/infrs-6.jpg" width="481" height="849" alt="">
+                    </picture>
+                </div>
+                <div class="infrastructure-item-inf">
+                    <div class="infrastructure-item-desc">
+                        <p class="infrastructure-item-subtitle">
+                            Отличное место для работы
+                        </p>
+                        <p class="infrastructure-item-text">
+                            Разнообразный и богатый опыт начало повседневной работы по формированию позиции позволяет.
+                        </p>
+                    </div>
+                    <div class="infrastructure-item-title">
+                        Конференц-зал
+                    </div>
+                </div>
+                <div class="infrastructure-item-btn">
+                    <svg width="31" height="31"><use xlink:href="images/icons.svg#btn"></use></svg>
+                </div>
+            </div>
+            <div class="infrastructure-item" data-item="11">
+                <div class="infrastructure-item-img">
+                    <picture>
+                        <img src="images/dist/infrastructure/infrs-11.jpg" width="481" height="849" alt="">
+                    </picture>
+                </div>
+                <div class="infrastructure-item-inf">
+                    <div class="infrastructure-item-desc">
+                        <p class="infrastructure-item-subtitle">
+                            Отличное место для работы
+                        </p>
+                        <p class="infrastructure-item-text">
+                            Разнообразный и богатый опыт начало повседневной работы по формированию позиции позволяет.
+                        </p>
+                    </div>
+                    <div class="infrastructure-item-title">
+                        Паркинг на 300 парковочных мест
+                    </div>
+                </div>
+                <div class="infrastructure-item-btn">
+                    <svg width="31" height="31"><use xlink:href="images/icons.svg#btn"></use></svg>
+                </div>
+            </div>
+            <div class="infrastructure-item" data-item="12">
+                <div class="infrastructure-item-img">
+                    <picture>
+                        <img src="images/dist/infrastructure/infrs-12.jpg" width="481" height="849" alt="">
+                    </picture>
+                </div>
+                <div class="infrastructure-item-inf">
+                    <div class="infrastructure-item-desc">
+                        <p class="infrastructure-item-subtitle">
+                            Отличное место для работы
+                        </p>
+                        <p class="infrastructure-item-text">
+                            Разнообразный и богатый опыт начало повседневной работы по формированию позиции позволяет.
+                        </p>
+                    </div>
+                    <div class="infrastructure-item-title">
+                        Казино
+                    </div>
+                </div>
+                <div class="infrastructure-item-btn">
+                    <svg width="31" height="31"><use xlink:href="images/icons.svg#btn"></use></svg>
+                </div>
+            </div>
+            
         </div>
     </div>
 </div>
@@ -274,6 +491,27 @@
     <div class="menu">
         <svg width="23" height="17"><use xlink:href="images/icons.svg#menu"></use></svg>
     </div>
+    <div class="lang">
+        <div class="lang-choosed">
+            ru
+        </div>
+        <div class="lang-choose">
+            <ul>
+                <li><a href="#">
+                    ge
+                </a></li>
+                <li><a href="#">
+                    en
+                </a></li>
+                <li><a href="#">
+                    ru
+                </a></li>
+                <li><a href="#">
+                    he
+                </a></li>
+            </ul>
+        </div>
+    </div>
 </div>
 <div class="content">
     <div class="content-header">
@@ -316,6 +554,9 @@
 
 <footer class="footer">
 	<div class="container" style="max-width: 1600px; margin-left: auto; margin-right: auto">
+		<div class="footer-logo">
+			<svg width="53" height="108"><use xlink:href="images/icons.svg#logos"></use></svg>
+		</div>
 		<div class="footer-wrapper">
 			<div class="footer-social">
 				<p>Соцсети:</p>

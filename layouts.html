@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 
@@ -19,13 +21,14 @@
 
 </head>
 
-<body>
+<body class='other bl'>
+<!-- <body> -->
 <div class="top">
 	<div class="container" style="max-width: 1600px; margin-left: auto; margin-right: auto">
 		<div class="top-nav">
 			<div class="top-logo">
 				<a href="/">
-					<svg width="53" height="108"><use xlink:href="images/icons.svg#logo"></use></svg>
+					<svg width="100%" height="100%"><use xlink:href="images/icons.svg#logo"></use></svg>
 				</a>
 			</div>
 			<div class="top-social">
@@ -51,33 +54,86 @@
 				<a href="#" class="current">ru</a>
 				<a href="#">he</a>
 			</div>
+			<div class="top-navg">
+				<a href="infrastructure.html">Инфраструктура</a>
+                <a href="layouts.html">Планировки</a>
+                <a href="gallery.html">Галерея</a>
+                <a href="about.html">О компании</a>
+                <a href="news.html">Новости</a>
+                <a href="contacts.html">Контакты</a>
+			</div>
 			<a href="tel:+70988900043" class="top-phone phone">+7 (098) 890-00-43</a>
 		</div>
 	</div>
 </div>
 
-
-<div class="layouts">
+<div id="layouts" class="layouts">
     <div class="layouts-bg">
         <picture>
-            <img src="images/dist/index/choose-bg.jpg" alt="">
+            <img src="images/dist/layouts/layouts-bg.jpg" alt="">
         </picture>
+    </div>
+    <div class="layouts-bg-svg">
+        <figure class="layouts-bg-fig">
+            <object id="block" data="images/svg/layouts-bg.svg" type="image/svg+xml">
+                <!-- <img src="images/dist/bg-1920x1450.jpg" alt=""> -->
+            </object>
+        </figure>
     </div>
     <div class="container" style="max-width: 1600px; margin-left: auto; margin-right: auto">
         <div class="layouts-content">
             <p class="subtitle">Выберите блок</p>
             <h1>Планировки</h1>
             <div class="choose-buttons">
-                <a href="#" class="choose-button">
+                <a href="#" class="choose-button" data-choose="1">
                     Блок <span>а</span>
                 </a>
-                <a href="#" class="choose-button">
+                <a href="#" class="choose-button" data-choose="2">
                     Блок <span>б</span>
                 </a>
-                <a href="#" class="choose-button">
+                <a href="#" class="choose-button" data-choose="3">
                     Блок <span>с</span>
                 </a>
             </div>
+        </div>
+    </div>
+    <div class="choose-slider">
+        <p>Выберите блок</p>
+        <div style="--swiper-navigation-size: 30px; --swiper-navigation-color: #fff;" class="swiper choose-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="choose-inner">
+                        <h2>Блок A</h2>
+                        <div class="choose-img">
+                            <picture>
+                                <img src="images/dist/index/choose/block-a.png" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="choose-inner">
+                        <h2>Блок Б</h2>
+                        <div class="choose-img">
+                            <picture>
+                                <img src="images/dist/index/choose/block-b.png" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="choose-inner">
+                        <h2>Блок С</h2>
+                        <div class="choose-img">
+                            <picture>
+                                <img src="images/dist/index/choose/block-c.png" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </div>
 </div>
@@ -92,10 +148,119 @@
                     <p>Блок С</p>
                 </div>
                 <h2>Этажи</h2>
-                <div class="floor-choose">
-                    <picture>
-                        <img src="http://dummyimage.com/1116x356/a6a6ff">
-                    </picture>
+                <div id="floor-choose" class="floor-choose">
+                    <div class="floor-choose-inner floor-show" data-floor="1">
+                        <div class="floor-choose-img">
+                            <picture>
+                                <img src="images/dist/layouts/2.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="floor-choose-svg">
+                            <figure class="floor-choose-fig">
+                                <object data="images/svg/layouts/2.svg" type="image/svg+xml">
+                                    <!-- <img src="images/dist/bg-1920x1450.jpg" alt=""> -->
+                                </object>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="floor-choose-inner" data-floor="2">
+                        <div class="floor-choose-img">
+                            <picture>
+                                <img src="images/dist/layouts/3.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="floor-choose-svg">
+                            <figure class="floor-choose-fig">
+                                <object data="images/svg/layouts/3.svg" type="image/svg+xml">
+                                    <!-- <img src="images/dist/bg-1920x1450.jpg" alt=""> -->
+                                </object>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="floor-choose-inner" data-floor="3">
+                        <div class="floor-choose-img">
+                            <picture>
+                                <img src="images/dist/layouts/4.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="floor-choose-svg">
+                            <figure class="floor-choose-fig">
+                                <object data="images/svg/layouts/4.svg" type="image/svg+xml">
+                                    <!-- <img src="images/dist/bg-1920x1450.jpg" alt=""> -->
+                                </object>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="floor-choose-inner" data-floor="4">
+                        <div class="floor-choose-img">
+                            <picture>
+                                <img src="images/dist/layouts/5.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="floor-choose-svg">
+                            <figure class="floor-choose-fig">
+                                <object data="images/svg/layouts/5.svg" type="image/svg+xml">
+                                    <!-- <img src="images/dist/bg-1920x1450.jpg" alt=""> -->
+                                </object>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="floor-choose-inner" data-floor="5">
+                        <div class="floor-choose-img">
+                            <picture>
+                                <img src="images/dist/layouts/6.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="floor-choose-svg">
+                            <figure class="floor-choose-fig">
+                                <object data="images/svg/layouts/6.svg" type="image/svg+xml">
+                                    <!-- <img src="images/dist/bg-1920x1450.jpg" alt=""> -->
+                                </object>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="floor-choose-inner" data-floor="6">
+                        <div class="floor-choose-img">
+                            <picture>
+                                <img src="images/dist/layouts/7.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="floor-choose-svg">
+                            <figure class="floor-choose-fig">
+                                <object data="images/svg/layouts/7.svg" type="image/svg+xml">
+                                    <!-- <img src="images/dist/bg-1920x1450.jpg" alt=""> -->
+                                </object>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="floor-choose-inner" data-floor="7">
+                        <div class="floor-choose-img">
+                            <picture>
+                                <img src="images/dist/layouts/8.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="floor-choose-svg">
+                            <figure class="floor-choose-fig">
+                                <object data="images/svg/layouts/8.svg" type="image/svg+xml">
+                                    <!-- <img src="images/dist/bg-1920x1450.jpg" alt=""> -->
+                                </object>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="floor-choose-inner" data-floor="8">
+                        <div class="floor-choose-img">
+                            <picture>
+                                <img src="images/dist/layouts/9.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="floor-choose-svg">
+                            <figure class="floor-choose-fig">
+                                <object data="images/svg/layouts/9.svg" type="image/svg+xml">
+                                    <!-- <img src="images/dist/bg-1920x1450.jpg" alt=""> -->
+                                </object>
+                            </figure>
+                        </div>
+                    </div>
                 </div>
                 <div class="floor-inf">
                     <div class="floor-item">
@@ -225,6 +390,27 @@
     <div class="menu">
         <svg width="23" height="17"><use xlink:href="images/icons.svg#menu"></use></svg>
     </div>
+    <div class="lang">
+        <div class="lang-choosed">
+            ru
+        </div>
+        <div class="lang-choose">
+            <ul>
+                <li><a href="#">
+                    ge
+                </a></li>
+                <li><a href="#">
+                    en
+                </a></li>
+                <li><a href="#">
+                    ru
+                </a></li>
+                <li><a href="#">
+                    he
+                </a></li>
+            </ul>
+        </div>
+    </div>
 </div>
 <div class="content">
     <div class="content-header">
@@ -267,6 +453,9 @@
 
 <footer class="footer">
 	<div class="container" style="max-width: 1600px; margin-left: auto; margin-right: auto">
+		<div class="footer-logo">
+			<svg width="53" height="108"><use xlink:href="images/icons.svg#logos"></use></svg>
+		</div>
 		<div class="footer-wrapper">
 			<div class="footer-social">
 				<p>Соцсети:</p>

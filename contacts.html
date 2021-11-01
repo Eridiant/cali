@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 
@@ -19,13 +21,14 @@
 
 </head>
 
-<body>
+<body class='other bl'>
+<!-- <body> -->
 <div class="top">
 	<div class="container" style="max-width: 1600px; margin-left: auto; margin-right: auto">
 		<div class="top-nav">
 			<div class="top-logo">
 				<a href="/">
-					<svg width="53" height="108"><use xlink:href="images/icons.svg#logo"></use></svg>
+					<svg width="100%" height="100%"><use xlink:href="images/icons.svg#logo"></use></svg>
 				</a>
 			</div>
 			<div class="top-social">
@@ -50,6 +53,14 @@
 				<a href="#">en</a>
 				<a href="#" class="current">ru</a>
 				<a href="#">he</a>
+			</div>
+			<div class="top-navg">
+				<a href="infrastructure.html">Инфраструктура</a>
+                <a href="layouts.html">Планировки</a>
+                <a href="gallery.html">Галерея</a>
+                <a href="about.html">О компании</a>
+                <a href="news.html">Новости</a>
+                <a href="contacts.html">Контакты</a>
 			</div>
 			<a href="tel:+70988900043" class="top-phone phone">+7 (098) 890-00-43</a>
 		</div>
@@ -103,6 +114,27 @@
     <div class="menu">
         <svg width="23" height="17"><use xlink:href="images/icons.svg#menu"></use></svg>
     </div>
+    <div class="lang">
+        <div class="lang-choosed">
+            ru
+        </div>
+        <div class="lang-choose">
+            <ul>
+                <li><a href="#">
+                    ge
+                </a></li>
+                <li><a href="#">
+                    en
+                </a></li>
+                <li><a href="#">
+                    ru
+                </a></li>
+                <li><a href="#">
+                    he
+                </a></li>
+            </ul>
+        </div>
+    </div>
 </div>
 <div class="content">
     <div class="content-header">
@@ -145,6 +177,9 @@
 
 <footer class="footer">
 	<div class="container" style="max-width: 1600px; margin-left: auto; margin-right: auto">
+		<div class="footer-logo">
+			<svg width="53" height="108"><use xlink:href="images/icons.svg#logos"></use></svg>
+		</div>
 		<div class="footer-wrapper">
 			<div class="footer-social">
 				<p>Соцсети:</p>
@@ -191,3 +226,58 @@
 <script src="js/app.min.js"></script>
 </body>
 </html>
+
+
+
+<div class="popup-wrapper">
+    <div class="popup">
+        <div class="popup-check">
+            <svg width="21" height="17"><use xlink:href="images/icons.svg#check"></use></svg>
+        </div>
+        <div class="popup-desc">
+            <h2>Спасибо</h2>
+            <p>
+                Ваша заявка отправлена, мы перезвоним
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="popup-wrapper">
+    <div class="popup">
+        <div class="popup-error">
+            <svg width="21" height="17"><use xlink:href="images/icons.svg#check"></use></svg>
+        </div>
+        <div class="popup-desc">
+            <h2>Ошибка</h2>
+            <p>
+                Ваша заявка не отправлена, попробуйте еще раз или отправьте заявку позднее.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="popup-wrapper form">
+    <div class="popup">
+        <div class="contacts-form">
+            <h2>Поможем в выборе!</h2>
+            <p>
+                Введите ваши данные и мы Вам перезвоним
+            </p>
+            <form action="hyaction">
+                <input type="text" name="name" placeholder="Имя">
+                <input type="text" name="phone" placeholder="Имя">
+                <div class="contacts-wrap">
+                    <button class="btn btn-blue">Отправить</button>
+                    <div class="contacts-check">
+                        <label for="contacts-check">Я согласен с условиями обработки персональных данных</label>
+                        <input id="contacts-check" class="contacts-checkbox" type="checkbox">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
