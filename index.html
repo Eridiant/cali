@@ -72,13 +72,26 @@
 </div>
 <header class="header">
 	<div class="header-bg img-bg">
-		<picture>
-			<!-- <source srcset="images/del/bg14.jpg" media="(max-width: 420px)">
-			<source srcset="images/del/bg13.jpg" media="(max-width: 1280px)">
-			<source srcset="images/del/bg12.jpg" media="(max-width: 1500px)">
-			<source srcset="images/del/bg11.jpg" media="(min-width: 1501px)"> -->
-			<img src="images/dist/header/header_bg.jpg" alt="">
-		</picture>
+		<div class="header-bg-wrap header-lights">
+			<picture>
+				<!-- <source srcset="images/del/bg14.jpg" media="(max-width: 420px)">
+				<source srcset="images/del/bg13.jpg" media="(max-width: 1280px)">
+				<source srcset="images/del/bg12.jpg" media="(max-width: 1500px)">
+				<source srcset="images/del/bg11.jpg" media="(min-width: 1501px)"> -->
+                <source type="image/jpeg" srcset="images/dist/header/header_bg.jpg, images/dist/header/header_bg-2x.jpg 2x">
+				<img src="images/dist/header/header_bg.jpg" alt="">
+			</picture>
+		</div>
+		<div class="header-bg-wrap">
+			<picture>
+				<!-- <source srcset="images/del/bg14.jpg" media="(max-width: 420px)">
+				<source srcset="images/del/bg13.jpg" media="(max-width: 1280px)">
+				<source srcset="images/del/bg12.jpg" media="(max-width: 1500px)">
+				<source srcset="images/del/bg11.jpg" media="(min-width: 1501px)"> -->
+				<source type="image/jpeg" srcset="images/dist/header/header_bg_night.jpg, images/dist/header/header_bg_night-2x.jpg 2x">
+				<img src="images/dist/header/header_bg_night.jpg" alt="">
+			</picture>
+		</div>
 	</div>
 	<div class="container" style="max-width: 1600px; margin-left: auto; margin-right: auto">
 		<div class="header-wrapper">
@@ -92,15 +105,9 @@
 			</div>
 		</div>
 		<div class="header-light">
-			<a href="#">
-				<svg width="19" height="19"><use xlink:href="images/icons.svg#sun"></use></svg>
-			</a>
-			<a href="#">
-				<svg width="57" height="24"><use xlink:href="images/icons.svg#switch"></use></svg>
-			</a>
-			<a href="#">
-				<svg width="17" height="17"><use xlink:href="images/icons.svg#moon"></use></svg>
-			</a>
+			<svg width="19" height="19"><use xlink:href="images/icons.svg#sun"></use></svg>
+			<svg class="header-light-rt" width="57" height="24"><use xlink:href="images/icons.svg#switch"></use></svg>
+			<svg width="17" height="17"><use xlink:href="images/icons.svg#moon"></use></svg>
 		</div>
 	</div>
 </header>
@@ -125,13 +132,13 @@
                 <p data-num="9">Собственный пляж</p>
                 <p data-num="10">Озелененные террасы</p>
                 <p data-num="11">Бассейн</p>
-                <p data-num="5">Фитнес</p>
+                <p data-num="12">Паркинг</p>
             </div>
         </div>
     </div>
     <div class="container-lg" style="max-width: 1920px; margin-left: auto; margin-right: auto">
         <!-- Swiper -->
-        <div class="swiper infr-swiper">
+        <div class="swiper infr-swiper" style="--swiper-navigation-color: #fff">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="infr-slider">
@@ -139,6 +146,11 @@
                             <picture>
                                 <img src="images/dist/index/infr/infr-1.jpg" width="362" height="544" alt="">
                             </picture>
+                            <div>
+                                <p>
+                                    международный сетевой отелей Hampton by Hilton! Hampton by Hilton - известная сеть отелей, гостиницы которой представлены во многих странах. Хэмптон хотелс включает 1762 гостиницы. Единая база клиентов позволяет иметь ежегодную загрузку отеля. Высокий уровень сервиса и отсутствие конкурентов в Батуми, имеет большое преимущество.
+                                </p>
+                            </div>
                         </div>
                         <div class="infr-title">
                             <h3>Отель Хемптон</h3>
@@ -154,6 +166,11 @@
                             <picture>
                                 <img src="images/dist/index/infr/infr-2.jpg" width="362" height="544" alt="">
                             </picture>
+                            <div>
+                                <p>
+                                    Будет иметь роскошное светлое пространство, отдельные зоны массажа и оздоровительных процедур. В отличие от большинства спа,которые рассчитаны на туристов, наш спа центр будет иметь — ориентацию на клиентов отеля и владельцев апартаментов, мы сделали упор на  благородные материалы в отделке, лаконичность дизайна и бесконечная элегантность.
+                                </p>
+                            </div>
                         </div>
                         <div class="infr-title">
                             <h3>SPA - центр</h3>
@@ -169,6 +186,11 @@
                             <picture>
                                 <img src="images/dist/index/infr/infr-3.jpg" width="362" height="544" alt="">
                             </picture>
+                            <div>
+                                <p>
+                                    концепция калиграф таурс, также направлена на досуг с семьей. Вы сможете насладиться современным кинотеатром, с современной акустикой и 3D графикой.
+                                </p>
+                            </div>
                         </div>
                         <div class="infr-title">
                             <h3>Кинотеатр</h3>
@@ -184,6 +206,11 @@
                             <picture>
                                 <img src="images/dist/index/infr/infr-4.jpg" width="362" height="544" alt="">
                             </picture>
+                            <div>
+                                <p>
+                                    комплекс включает формат развлечений для лиц старше 21+, вас ждет казино и разнообразные игры в режиме 24 часа
+                                </p>
+                            </div>
                         </div>
                         <div class="infr-title">
                             <h3>Казино</h3>
@@ -199,6 +226,11 @@
                             <picture>
                                 <img src="images/dist/index/infr/infr-5.jpg" width="362" height="544" alt="">
                             </picture>
+                            <div>
+                                <p>
+                                    наша задача — создать все условия, чтобы спорт приносил не только пользу, но и удовольствие оснащенный новейшим спортивным оборудованием и всеми необходимыми тренажерами для профессионального спорта и любительских занятий
+                                </p>
+                            </div>
                         </div>
                         <div class="infr-title">
                             <h3>Фитнес</h3>
@@ -214,6 +246,11 @@
                             <picture>
                                 <img src="images/dist/index/infr/infr-6.jpg" width="362" height="544" alt="">
                             </picture>
+                            <div>
+                                <p>
+                                    отличное место для работы и отдыха, мы предусмотрели возможность работы в формате коворкинг зон для переговров и мероприятий.
+                                </p>
+                            </div>
                         </div>
                         <div class="infr-title">
                             <h3>Бизнес центр</h3>
@@ -229,6 +266,11 @@
                             <picture>
                                 <img src="images/dist/index/infr/infr-6.jpg" width="362" height="544" alt="">
                             </picture>
+                            <div>
+                                <p>
+                                    будут иметь свыше 3 видов кухни, приятная музыка, морской воздух. Высокая и традиционная Грузинская, Европейская, Азиатская кухня и кошерная.
+                                </p>
+                            </div>
                         </div>
                         <div class="infr-title">
                             <h3>Рестораны</h3>
@@ -244,6 +286,11 @@
                             <picture>
                                 <img src="images/dist/index/infr/infr-8.jpg" width="362" height="544" alt="">
                             </picture>
+                            <div>
+                                <p>
+                                    концепция отеля имеет детский клуб и анимацию для детей от 2 до 10 лет,  мы ценим ваш отдых и заботимся о ваших детях.
+                                </p>
+                            </div>
                         </div>
                         <div class="infr-title">
                             <h3>Детская комната</h3>
@@ -257,8 +304,13 @@
                     <div class="infr-slider">
                         <div class="infr-img">
                             <picture>
-                                <img src="images/dist/index/infr/infr-6.jpg" width="362" height="544" alt="">
+                                <img src="images/dist/index/infr/infr-9.jpg" width="362" height="544" alt="">
                             </picture>
+                            <div>
+                                <p>
+                                    ваш отдых будет иметь персональную зону на море, отдельный пляж и лежаки. 
+                                </p>
+                            </div>
                         </div>
                         <div class="infr-title">
                             <h3>Собственный пляж</h3>
@@ -274,6 +326,11 @@
                             <picture>
                                 <img src="images/dist/index/infr/infr-10.jpg" width="362" height="544" alt="">
                             </picture>
+                            <div>
+                                <p>
+                                    сможете насладиться видами вечернего Батуми , футбольным матчем или концертом мирового масштаба не покидая комплекс
+                                </p>
+                            </div>
                         </div>
                         <div class="infr-title">
                             <h3>Озелененные террасы</h3>
@@ -289,6 +346,11 @@
                             <picture>
                                 <img src="images/dist/index/infr/infr-11.jpg" width="362" height="544" alt="">
                             </picture>
+                            <div>
+                                <p>
+                                    входит в концепцию - подогреваемый бассейн. входит в концепцию - подогреваемый бассейн.
+                                </p>
+                            </div>
                         </div>
                         <div class="infr-title">
                             <h3>Бассейн</h3>
@@ -302,13 +364,18 @@
                     <div class="infr-slider">
                         <div class="infr-img">
                             <picture>
-                                <img src="images/dist/index/infr/infr-6.jpg" width="362" height="544" alt="">
+                                <img src="images/dist/index/infr/infr-12.jpg" width="362" height="544" alt="">
                             </picture>
+                            <div>
+                                <p>
+                                    Паркинг на 300 парковочных мест
+                                </p>
+                            </div>
                         </div>
                         <div class="infr-title">
-                            <h3>Фитнес</h3>
+                            <h3>Паркинг</h3>
                             <p>
-                                наша задача — создать все условия, чтобы спорт приносил не только пользу, но и удовольствие оснащенный новейшим спортивным оборудованием и всеми необходимыми тренажерами для профессионального спорта и любительских занятий
+                                Паркинг на 300 парковочных мест
                             </p>
                         </div>
                     </div>
@@ -323,10 +390,11 @@
 
 <div class="aboute">
     <div class="container" style="max-width: 1306px; margin-left: auto; margin-right: auto">
-        <h2>Раздел о компании</h2>
         <p>Раздел о компании</p>
+        <h2>Раздел о компании</h2>
         <div class="aboute-img">
             <picture>
+                <source type="image/jpeg" srcset="images/dist/index/about.jpg, images/dist/about/about-2x.jpg 2x">
                 <img src="images/dist/index/about.jpg" width="1306" height="764" alt="">
             </picture>
         </div>
@@ -364,7 +432,7 @@
                 </div>
             </div>
             <div class="project-about">
-                <p class="subtitle">Раздел о компании</p>
+                <!-- <p class="subtitle">Раздел о компании</p> -->
                 <h2>О проекте</h2>
                 <p>
                     Разнообразный и богатый опыт начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития.
@@ -400,13 +468,13 @@
                 <p class="subtitle">Планировки</p>
                 <h2>Выберите блок</h2>
                 <div class="choose-buttons">
-                    <a href="#" class="choose-button" data-choose="1">
+                    <a href="layouts.html" class="choose-button" data-choose="1">
                         Блок <span>а</span>
                     </a>
-                    <a href="#" class="choose-button" data-choose="2">
+                    <a href="layouts.html" class="choose-button" data-choose="2">
                         Блок <span>б</span>
                     </a>
-                    <a href="#" class="choose-button" data-choose="3">
+                    <a href="layouts.html" class="choose-button" data-choose="3">
                         Блок <span>с</span>
                     </a>
                 </div>
@@ -477,29 +545,28 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.574059231447!2d41.61839171541153!3d41.6433373792416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40678672f2beb8cb%3A0x33e0f1c9145ee33!2zMTE2IFp1cmFiIEdvcmdpbGFkemUgU3QsIEJhdHVtaSwg0JPRgNGD0LfQuNGP!5e0!3m2!1sru!2sru!4v1621084648113!5m2!1sru!2sru" width="100%" height="100%" allowfullscreen="" loading="lazy"></iframe>
             </div>
             <div class="contact-form">
-                <p class="">Поможем в выборе!</p>
+                <p class="title">Поможем в выборе!</p>
                 <p>
                     Разнообразный и богатый опыт начало повседневной работы по формированию.
                 </p>
                 <form action="hyaction">
                     <input type="text" name="name" placeholder="Имя">
-                    <div class="contact-wrap">
-                        <input type="text" name="phone" placeholder="Имя">
+                    <input type="text" name="phone" placeholder="Телефон">
+                    <!-- <div class="contact-wrap">
                         <input type="text" name="email" placeholder="Имя">
-                    </div>
+                    </div> -->
                     <div class="contact-wrap">
                         <div class="contact-inner">
                             <label for="contact-check">Я согласен с условиями обработки персональных данных</label>
                             <input id="contact-check" class="contact-checkbox" type="checkbox">
                         </div>
-                        <button class="btn">Отправить</button>
+                        <button class="btn btn-white">Отправить</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 </main>
-
 
 <div class="container-lg" style="max-width: 1920px; margin-left: auto; margin-right: auto">
     <div class="menu">
@@ -590,7 +657,7 @@
 				</div>
 			</div>
 			<div class="footer-navigate">
-				<p>Навигация</p>
+				<p>Навигация:</p>
 				<div class="footer-navigate-wrap">
 					<div class="footer-navigate-inner">
 						<a href="#">О компании</a>
@@ -604,7 +671,8 @@
 			</div>
 			<div class="footer-phone">
 				<a href="tel:+70988900043" class="top-phone phone">+7 (098) 890-00-43</a>
-				<p>г. Москва, ул. Пражская 88/23</p>
+				</br>
+				<span>г. Москва, ул. Пражская 88/23</span>
 			</div>
 		</div>
 		<a href="#">Политики конфиденциальности</a>
